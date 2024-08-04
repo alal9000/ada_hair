@@ -248,6 +248,13 @@
     background: var(--primary);
 }
 
+/*** Slider ***/
+.carousel-inner img {
+    max-height: 800px;
+    object-fit: cover;
+    margin: auto;
+}
+
 
 /*** Testimonial ***/
 .testimonial-carousel {
