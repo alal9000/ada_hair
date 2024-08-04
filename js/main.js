@@ -36,12 +36,6 @@
         return false;
     });
 
-    $('a[href="#home1"]').click(function (e) {
-        e.preventDefault();
-        $('html, body').animate({ scrollTop: 0 }, 1500, 'easeInOutExpo');
-        return false;
-    });
-
     // Testimonials carousel
     $('.testimonial-carousel').owlCarousel({
         autoplay: true,
