@@ -48,19 +48,19 @@
     });
 
     // Active link switching
-    function setActiveLink() {
-        var currentScrollPos = $(window).scrollTop();
-        $('.nav-link').each(function () {
-            var section = $($(this).attr('href'));
-            if (section.length) {
-                var sectionOffset = section.offset().top - 80; // Adjust offset for navbar height
-                if (currentScrollPos >= sectionOffset && currentScrollPos < sectionOffset + section.outerHeight()) {
-                    $('.nav-link').removeClass('active');
-                    $(this).addClass('active');
-                }
-            }
-        });
-    }
+    // function setActiveLink() {
+    //     var currentScrollPos = $(window).scrollTop();
+    //     $('.nav-link').each(function () {
+    //         var section = $($(this).attr('href'));
+    //         if (section.length) {
+    //             var sectionOffset = section.offset().top - 80; // Adjust offset for navbar height
+    //             if (currentScrollPos >= sectionOffset && currentScrollPos < sectionOffset + section.outerHeight()) {
+    //                 $('.nav-link').removeClass('active');
+    //                 $(this).addClass('active');
+    //             }
+    //         }
+    //     });
+    // }
 
     $(document).ready(function () {
         // Set initial active link
